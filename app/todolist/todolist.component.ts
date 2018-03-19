@@ -7,7 +7,7 @@ import { Component, OnInit ,Input, EventEmitter, Output} from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  @Input() dataInput = new EventEmitter();
+  @Output() dataInput = new EventEmitter();
 
   constructor() { }
 
