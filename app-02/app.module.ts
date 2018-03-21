@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
-import { TodolistComponent } from './todolist/todolist.component';
-import { ThelistComponent } from './thelist/thelist.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import { ThelistComponent } from './components/thelist/thelist.component';
+import { ListService } from './services/list.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,9 @@ import { ThelistComponent } from './thelist/thelist.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
