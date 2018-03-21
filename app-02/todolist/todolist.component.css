@@ -1,0 +1,62 @@
+ul,li{
+    list-style: none;
+}
+div{
+    margin: 0 auto;
+    width: 70%;
+    background: #cdcdcd;
+    padding-bottom: 50px; 
+}
+header{
+    height:50px;
+    background: rgba(47,47,47,0.98);
+}
+#Title{
+    margin-left: 12px;
+}
+.get{
+    width: 60%;
+    height: 24px;
+    margin-top: 12px;
+    text-indent: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+    border: none;
+}
+#getbtn{
+    float:right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+label{
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;
+}
+li{
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+}
+#check{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+#del{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+}
