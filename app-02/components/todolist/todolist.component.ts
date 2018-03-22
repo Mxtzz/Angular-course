@@ -12,12 +12,14 @@ export class TodolistComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  index = 0;
   item = '';
   // list = [];
   addItem(){
     // this.list.push(this.item);
     this.service.push(this.item);
+    this.index++;
+    this.service.setItem(this.index,this.item);
     this.item = "";
     // console.log(this.list);
   }

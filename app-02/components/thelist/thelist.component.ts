@@ -14,6 +14,8 @@ export class ThelistComponent implements OnInit {
   list = [];
   ngOnInit() {
     this.list = this.service.list;
+    // localStorage.getItem(this.id);
+    console.log(localStorage);
   }
   delItem(index){
     this.service.splice(index);
