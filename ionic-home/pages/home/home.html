@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar color="yel">
+    <button icon-only menuToggle ><ion-icon name="menu"></ion-icon></button>
+    <ion-title><img src="../../assets/imgs/ziya-logo.png" alt=""></ion-title>
+  </ion-navbar>
+
+  <!-- 滑动框 -->
+  <ion-slides autoplay="2000" loop="true">
+    <ion-slide>
+      <img src="../../assets/imgs/slide1.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/slide1.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/slide1.png" alt="">
+    </ion-slide>
+  </ion-slides>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="find" color="yel">
+    <ion-segment-button value="findmsg">
+      找信息
+    </ion-segment-button>
+    <ion-segment-button value="findser">
+      <!-- <ion-icon name="bookmark"></ion-icon> -->
+      找服务
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-content [ngSwitch]="find">
+
+    <!-- 找信息 -->
+    <ion-list *ngSwitchCase="'findmsg'">
+      <ion-item>
+        <button *ngFor="let item of btn">
+          <img src={{item.src}}>
+          <p>{{item.p}}</p>
+        </button>
+        <!-- <button>
+          <img src="../../assets/icon/home-icon1.png" alt="">
+          <p>资产包转让</p>
+        </button>
+        <button>
+          <img src="../../assets/icon/home-icon2.png" alt="">
+          <p>债权转让</p>
+        </button>
+        <button>
+          <img src="../../assets/icon/home-icon3.png" alt="">
+          <p>固产转让</p>
+        </button>
+        <button>
+          <img src="../../assets/icon/home-icon4.png" alt="">
+          <p>商业保理</p>
+        </button> -->
+      </ion-item>
+    </ion-list>
+
+    <!-- 找服务 -->
+    <ion-list *ngSwitchCase="'findser'">
+      <ion-item *ngFor="let item of items">
+        {{item}}只北京烤小黄鸭
+      </ion-item>
+    </ion-list>
+  <!-- </ion-content> -->
+  <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{item}}只北京烤小黄鸭
+      </ion-item>
+    </ion-list>
+  <!-- 上拉加载 -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="100px">
+    <ion-infinite-scroll-content loadingText="正在加载...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  
+
+</ion-content>
