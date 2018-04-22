@@ -1,0 +1,84 @@
+page-user {
+
+}
+.user_title{
+    color: #000;
+    text-align: center;
+}
+.user{
+    background: rgb(249, 249, 249);
+    width: 100%;
+    padding: 0;
+}
+.user_msg{
+    padding: 0.5rem;
+    background: #fff;
+    margin: 1rem 0 1rem 0;
+}
+.user_msg button{
+    float: right;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    background: #fff;
+    color:#fedb47;
+    border: 1px solid #fedb47;
+    box-shadow: none;
+}
+.user_msg .header{
+    margin: 0.5rem auto;
+    width: 7rem;
+}
+.user_msg img{
+    border-radius: 3.5rem;
+}
+.user_msg h2{
+    margin-top:0; 
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.user_msg p{
+    margin-top:0; 
+    margin-bottom: 0;
+    text-align: center;
+    color: #ccc;
+}
+.user_msg h3{
+    margin-top:0; 
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+}
+
+
+
+.button1_3{
+    margin: 0!important;
+    border-bottom: solid 1px #eee;
+}
+.button1_3 button{
+    padding-left: 0;
+}
+.button1_3 img{
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.button4_9{
+    border-top: 0.1rem solid #eee;
+    margin: 0.8rem 0 0 0!important;
+    border-bottom: solid 0.1rem #bbb;
+}
+.button4_9 button{
+    padding-left: 0;
+}
+.button4_9 img{
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

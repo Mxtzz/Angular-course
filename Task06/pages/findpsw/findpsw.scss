@@ -1,0 +1,48 @@
+page-reg {
+
+}
+.findpsw{
+    background: url('../../assets/login/bg.png')!important;
+    background-size: 100%!important;
+}
+.fog_title .back-button-icon{
+    color: #fff;
+}
+.fog_title div{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+form{
+    width: 95%;
+}
+
+.fog_inp{
+    margin-top: 150px;
+}
+.fog_inp ion-label{
+    height:30px;
+    padding-top: 5px;
+    width: 55px;
+}
+.fog_inp input{
+    color:rgb(222,222,222);
+    margin-left: 0px!important;
+}
+.check{
+    width: 70%;
+    float: left;
+}
+#check-btn{
+    float: right;
+    border: none;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.fog_confirm{
+    text-align: center;
+    margin-top: 2rem;
+}
+.fog_confirm button{
+    width: 80%;
+}

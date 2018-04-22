@@ -1,0 +1,105 @@
+page-home {
+    
+}
+.title_img{
+    text-align: center;
+}
+.title_img img{
+    width: 50%;
+}
+
+ion-slides{
+    height: 30%;
+}
+
+ion-content button{
+    background: #fff;
+    border: 1px solid #eee;
+    margin: 0.18rem;
+    padding-bottom: 0.8rem;
+}
+.find_msg img{
+    width: 50%;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.find_list{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.find_list .item{
+    padding-left: 0;
+}
+.find_list .item-inner{
+    padding-right: 0!important;
+}
+.find_list .label{
+    margin: 0;
+}
+.find_msg button{
+    width: 24%;
+}
+
+
+// 优质信息
+.yzxx img{
+    float: left;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: 0.8rem;
+    margin-top: 1.3rem;
+}
+.yzxx h2{
+    margin-left: 0.8rem;
+    line-height: 4.8rem;
+}
+
+.find_title{
+    padding-left:0.8rem; 
+    height:3rem;
+    border-bottom:1px solid #ccc; 
+}
+.find_title h3{
+    display: block;
+    float: left;
+    margin: 0;
+    line-height: 3rem;
+}
+.find_title p{
+    display: inline-block;
+    margin: 0;
+    line-height: 3rem;
+}
+.find_img{
+    margin: 1.2rem 0.8rem;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.place{
+    margin-top:0.8rem;
+    width: 26%;
+    float: left;
+}
+.place p{
+    display: inline-block;
+}
+.all{
+    float: left;
+    display: block;
+    margin-left: 0.5rem;
+    margin-top: 1.6rem;
+    width: 17%;
+}
+.all h1{
+    font-size: 2.2rem;
+    color: rgb(192, 20, 68);
+}
+.forward{
+    float: right;
+    border: none;
+    margin-top: 3.3rem;
+    width: 10%;
+}
+
+

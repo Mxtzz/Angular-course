@@ -1,0 +1,39 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar transparent>
+    <!-- <button id="back" icon-only><ion-icon name="arrow-back"></ion-icon></button> -->
+    <ion-title class="login_title">登录</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="login">
+  <div class="login_logo">
+    <img src="assets/login/logo.png" alt="">
+    <p on-tap="MyLogin()">全球不良资产超级综合服务平台</p>
+  </div>
+  <form>
+    <div class="login_inp">
+      <ion-item>
+        <ion-label icon-only><ion-icon name="person"></ion-icon></ion-label>
+        <ion-input type="text" placeholder="请输入您的手机号" #username></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label icon-only><ion-icon name="lock"></ion-icon></ion-label>
+        <ion-input type="password" placeholder="请输入您的密码" #password></ion-input>
+      </ion-item>
+    </div>
+    
+    <div class="login_btn">
+      <button id="log" ion-button round (click)="login(username.value,password.value)">登录</button>
+      <button id="reg" ion-button round (click)="reg()">注册</button>
+      <button id="fog" ion-button round (click)="forget()">忘记密码？</button>
+    </div>
+  </form>
+</ion-content>

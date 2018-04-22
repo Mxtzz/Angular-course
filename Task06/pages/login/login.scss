@@ -1,0 +1,63 @@
+page-login {
+}
+ion-navbar{
+    background: transparent!important;
+}
+ion-item{
+    background: transparent!important;
+}
+ion-icon{
+    color: rgb(222,222,222);
+}
+.login_title div{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+.login{
+    background: url('../../assets/login/bg.png');
+    background-size: 100%!important;
+}
+.login_logo{
+    margin-top: 2rem;
+    text-align: center;
+}
+.login_logo img{
+    width: 40%;
+}
+.login_logo p{
+    color: #fff;
+}
+.login_inp{
+    margin-top: 8rem;
+}
+.login_inp ion-label{
+    height:30px;
+    padding-top: 5px;
+    width: 6rem;
+}
+.login_inp input{
+    color:rgb(222,222,222);
+}
+.login_btn button{
+    width: 70%;
+    
+}
+.login_btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+.login_btn #log{
+    border: solid 2px #fedb47;
+}
+.login_btn #reg{
+    background: transparent!important;
+    color: #fedb47;
+    border: solid 2px #fedb47;
+    margin-top: 2rem;
+}
+.login_btn #fog{
+    background: transparent!important;
+    border: none;
+    color: rgb(222,222,222);
+}

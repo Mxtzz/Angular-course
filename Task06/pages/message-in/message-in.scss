@@ -1,0 +1,68 @@
+page-message-in {
+
+}
+.msg_in{
+    background: rgb(238, 238, 238);
+}
+
+.msg_footer div{
+    background: #fff;
+}
+
+.msg_footer button{
+    background: #fff;
+}
+
+.send{
+    clear: both;
+}
+
+.msg_in img{
+    width: 50px;
+    border-radius: 50%;
+}
+.send div:nth-of-type(1){
+    float: left;
+}
+.send div:nth-of-type(2){
+    background: gold;
+    float: left;
+    margin: 10px 20px 10px 15px;
+    padding: 10px 10px 10px 0;
+    border-radius: 7px;
+}
+.left_angle{
+    height: 0;
+    width: 0;
+    border: 8px solid;
+    border-color:  transparent gold transparent transparent; 
+    position: relative;
+    left: -16px;
+    top: 3px;
+}
+.receiver{
+    clear: both;
+}
+
+.receiver div:nth-child(1){
+    float: right;
+}
+.receiver div:nth-of-type(2){
+    float:right;
+    background-color: gold;
+    margin: 10px 16px 10px 20px;
+    padding: 10px 0px 10px 10px;
+    border-radius:7px;
+    width: 200px;
+    word-break:normal;
+    display: block;
+}
+.right_angle{
+    height:0px; 
+    width:0px; 
+    border: 8px solid;
+    border-color: transparent transparent transparent gold; 
+    position: relative;
+    right:-16px;
+    top:3px;
+}

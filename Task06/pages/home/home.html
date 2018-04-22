@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar color="yel" mode="ios">
+    <!-- <ion-buttons start>
+      <button ion-button icon-only><ion-icon color="dark" name="menu"></ion-icon></button>    
+    </ion-buttons> -->
+    <ion-title class="title_img">
+      <img src="../../assets/imgs/ziya-logo.png" alt="">
+    </ion-title>
+    <ion-buttons end>
+      <button icon-only ion-button><ion-icon color="dark" name="search"></ion-icon></button>    
+    </ion-buttons>
+  </ion-navbar>
+<!-- 搜索框 -->
+  <!-- <ion-toolbar color="yel">
+    <ion-searchbar>
+    </ion-searchbar>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <!-- 滑动框 -->
+  <ion-slides autoplay="2000" loop="true">
+      <ion-slide *ngFor="let item of slide">
+        <img src={{item}} alt="">
+      </ion-slide>
+    </ion-slides>
+  <ion-segment [(ngModel)]="find" color="yel">
+    <ion-segment-button value="findmsg">
+      找信息
+    </ion-segment-button>
+    <ion-segment-button value="findser">
+      找服务
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="find" class="find_msg">
+    <!-- 找信息 -->
+    <ion-list class="find_list" no-lines *ngSwitchCase="'findmsg'">
+      <ion-item>
+        <button *ngFor="let item of findmsg">
+          <img src={{item.src}}>
+          <p>{{item.p}}</p>
+        </button>
+      </ion-item>
+      <ion-item>
+        <button *ngFor="let item of findmsg">
+          <img src={{item.src}}>
+          <p>{{item.p}}</p>
+        </button>
+      </ion-item>
+    </ion-list>
+
+    <!-- 找服务 -->
+    <ion-list class="find_list" no-lines *ngSwitchCase="'findser'">
+        <ion-item>
+          <button *ngFor="let item of findser">
+            <img src={{item.src}}>
+            <p>{{item.p}}</p>
+          </button>
+        </ion-item>
+        <ion-item>
+          <button *ngFor="let item of findser">
+            <img src={{item.src}}>
+            <p>{{item.p}}</p>
+          </button>
+        </ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="find_list">
+      <ion-item class="yzxx">
+        <img src="assets/icon/yzxx.png" alt="">
+        <h2>优质信息</h2>
+      </ion-item>
+
+      <ion-item *ngFor="let item of goodmsg">
+        <div class="find_title">
+          <h3>{{item.title}}</h3>
+          <p>--FB001</p>
+        </div>
+        <div class="find_img">
+            <img src="{{item.src}}" alt="">
+        </div>
+        <div class="place">
+          <h3>{{item.places}}<p>{{item.place}}</p></h3>
+          <h3>{{item.froms}}<p>{{item.from}}</p></h3>
+          <h3>{{item.types}}<p>{{item.type}}</p></h3>
+        </div>
+        <div class="all">
+          <h1>{{item.allmoney}}</h1>
+          <p>{{item.allname}}</p>
+        </div>
+        <div class="all">
+          <h1>{{item.transmoney}}</h1>
+          <p>{{item.transname}}</p>
+        </div>
+        <button class="forward" icon-only><ion-icon name="arrow-forward"></ion-icon></button>
+      </ion-item>
+        
+    </ion-list>
+  </div>
+    
+
+  
+
+</ion-content>
